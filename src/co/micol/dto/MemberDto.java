@@ -3,7 +3,7 @@ package co.micol.dto;
 import java.sql.Date;
 
 public class MemberDto {
-	private String Id;
+	private String id;
 	private String name;
 	private	String pw;
 	private String grant;
@@ -15,11 +15,19 @@ public class MemberDto {
 	public MemberDto() {
 		super();
 	}
+	
+	public MemberDto(String id, String name, String pw, String addr) {
+		this.id = id;
+		this.name = name;
+		this.pw = pw;
+		this.addr = addr;
+	}
+	
 	public String getId() {
-		return Id;
+		return id;
 	}
 	public void setId(String id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getName() {
 		return name;
